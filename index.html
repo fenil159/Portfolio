@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Fenil Patel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65930c2be8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    port<span class="pink" style="color: #ff004f;">folio</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#protfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="#project">Project</a></li> -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,My <span class="pink" style="color: #ff004f;">name</span> is Fenil</h1>
+                <span id="element"></span>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['and I am a Web Developer.',],
+                        typeSpeed: 50,
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!--  -------about--------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently pursuing my B.Tech in (4rd year) computer Engineering from Government Engineering
+                        Collage , Modasa. I
+                        am looking for an opportunity where I can further expand my practical skills and
+                        contribute to real-world projects, I am excited to gain hands-on experience and make a
+                        meaningful impact as a Web developer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('project')">Project</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html</span></li>
+                            <li><span>Css</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span></span></li>
+                            <li><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> 2020-2024</span> Government Engineering Collage , Modasa<br> | B.tech | Computer
+                                Engineering<br>6.80 CGPA </li>
+                            <li><span> 2020</span><br>Prerna Vidhyalaya | HSC <br>63%</li>
+                            <li><span> 2018</span><br>Sahjanand Vidhyalaya | SSC <br>86.33%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <!-- <li><span>no Project</span></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services-------------   -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive website</h2>
+                    <P>Which means your website will open and intergate with all types of devices like
+                        mobile,Tablet,Desktop,etc.For all devices your website look pretty attractive. </P>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Redisign Old Website</h2>
+                    <P>Your Website looking old & slow? No one want to open ugly & slower webpages.Don't worry I am here
+                        to Redeign your current website and convert it into attractive & creative.</P>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-free-code-camp"></i>
+                    <h2>Ux Design</h2>
+                    <P>Creating a seamless and intuitive user experience and optimize the
+                        layout, navigation, and interactivity of the website to enhance user engagement and
+                        satisfaction.</P>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--------protfolio---------->
+    <div id="protfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mycart.jpg" style="height:30vh">
+                    <div class="layer">
+                        <h3>My Cart</h3>
+                        <p>.</p>
+                        <a href="https://fenil159.github.io/Mycart/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/tn-react-todo-list.jpg" style="height:30vh">
+                    <div class="layer">
+                        <h3>Todo List</h3>
+                        <p></p>
+                        <a href="https://fenil159.github.io/OIBSIP_TODO-s-LIST/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spotify.png" style="height:30vh" >
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p></p>
+                        <a href="https://fenil159.github.io/Spotify-Clone/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#project" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <P><i class="fa-solid fa-envelope"></i> fenilpatel6248@gmail.com</P>
+                    <P><i class="fa-solid fa-square-phone"></i>+91 7048645441</P>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/fenil-patel-91ba0525a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/fenil159"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Created By Fenil Patel <i class="fa-regular fa-copyright"></i> 2023 All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzBq7PBpnDSo_RL3jYtJrufqreCw3p9jsojQA8bcj1CrwfUditVh_wJDOPH7MRXvcDE/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
